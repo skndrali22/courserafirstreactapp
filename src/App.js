@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
 import './App.css';
 // import Cards from './components/Cards';
-
-
+// import UseHook from './UseHook';
+import RegisterForm from './RegisterForm';
 function App() {
 
-  function handleClick(){
-    let randomNum = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNum);
-    let userInput = prompt('Guess a number'); 
-    alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
-  }
+  // function handleClick(){
+  //   let randomNum = Math.floor(Math.random() * 3) + 1;
+  //   console.log(randomNum);
+  //   let userInput = prompt('Guess a number'); 
+  //   alert(`Computer number: ${randomNum}, Your guess: ${userInput}`);
+  // }
 
   return (
     // <div className="App">
@@ -21,12 +21,14 @@ function App() {
     // </div>
 
     <div>
-      <h1>Task: Add a button and handle a click event</h1>
-
+      {/* <h1>Task: Add a button and handle a click event</h1>
       <button 
         onClick = {handleClick}>
         Guess the number between 1 and 3
-      </button>
+      </button> */}
+      {/* <UseHook/> */}
+
+      <RegisterForm />
     </div>
 
 
