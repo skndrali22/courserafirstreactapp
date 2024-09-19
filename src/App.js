@@ -3,6 +3,7 @@ import './App.css';
 // import Cards from './components/Cards';
 // import UseHook from './UseHook';
 import RegisterForm from './RegisterForm';
+import UseRefHook from './UseRefHook';
 function App() {
 
   // function handleClick(){
@@ -29,6 +30,8 @@ function App() {
       {/* <UseHook/> */}
 
       <RegisterForm />
+      <br/>
+      <UseRefHook/>
     </div>
 
 

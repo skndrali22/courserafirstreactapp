@@ -11,15 +11,20 @@ export default function RegisterForm() {
     const { name, value } = e.target;
     setForm({
       ...form,
-      [name]: value, 
+      [name]: value,
     });
   }
 
   return (
     <>
+      <h1>useState Hook implementation</h1>
       <label>
         First name:
-        <input name="firstName" value={form.firstName} onChange={handleChange} />
+        <input
+          name="firstName"
+          value={form.firstName}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Last name:
@@ -32,6 +37,18 @@ export default function RegisterForm() {
       <p>
         {form.firstName} {form.lastName} ({form.email})
       </p>
+
+      <button
+        onClick={() => {
+          setForm({
+            firstName: "Skndr",
+            lastName: "Ali",
+            email: "skndrshaikh17c@gmail.com",
+          });
+        }}
+      >
+        reset
+      </button>
     </>
   );
 }
